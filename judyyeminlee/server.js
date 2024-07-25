@@ -4,7 +4,7 @@ import cors from "cors";
 import mysql from "mysql2";
 
 const app = express();
-const port = 5000;
+const port = 5555;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "yourpassword",
+  password: "password",
   database: "artist_merch_store",
 });
 
